@@ -9,6 +9,21 @@
         return new ArrayList<>();
     }
     
+    // Найти максимальное значение
+    public Integer getMax(List<Integer> list){
+ 
+        // если пусто
+        if (list == null || list.size() == 0) {
+            return Integer.MIN_VALUE;
+        }
+ 
+        // создаем новый List для модификации
+        List<Integer> sortedlist = new ArrayList<>(list);
+ 
+        Collections.sort(sortedlist);
+        System.out.println(sortedlist.get(sortedlist.size() - 1));
+        return 0;
+    }
 
     public Integer getAverage(List<Integer> list){
     int sumElements = 0;
@@ -19,5 +34,5 @@
         }
         if (count == 0)
             return 0;    
-        return sumElements / count;
+        System.out.println(sumElements / count);
     }
