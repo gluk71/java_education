@@ -5,7 +5,11 @@
 
     // Нужно удалить из него четные числа
     public List<Integer> removeNegativeValue(List<Integer> list){
+        List<Integer> list2 = new ArrayList<>();
 
+        for(int i = 0; i <= list.size(); i++) 
+            if(list.get(i) > 0)
+                list2.add(list.get(i));
         return new ArrayList<>();
     }
     
